@@ -1,6 +1,7 @@
 # Conceal.js
 
-
+## Demo 
+https://htmlpreview.github.io/?https://github.com/AyabongaQwabi/Conceal/blob/master/pass.htm
 
 # ConcealJS allows you to make any input field a password marked up with your style of choice.
 ### So instead of your password field showing `***********` or dots you can set it to any string to display e.g 'PASSWORD'
