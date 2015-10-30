@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> Pass</title>
+        <script src="jquery-2.1.1.js"></script>
+        <script src="materialize.js"></script>
+
+        <style type='text/css'>
+          .row .col input{
+              padding:5%;
+              border:4px solid black;
+              box-shadow:1px 1px 10px 1px black;
+              font-weight: bolder;
+              font-size: 4em;
+              border-radius:20px;
+              margin-top:5%;
+          }
+          .btn, .btn-large{
+            width:40%;
+            height:60%;
+          }
+        </style>
+        <link rel='stylesheet' type='text/css' href='materialize.css'>
+    </head>
+
+    <body class='blue darken-3'>
+      <div class='container blue darken-3 center '>
+        <div class='row center'>
+          <div class='col s12 m10 center'>
+            <h2 class='title red-text brown-4'><b> Conceal.js </b></h2>
+            <h5 class='grey-text'><b>This Very sneaky library allows you to</h5></b><br>
+            <h5 class='grey-text'><b> Change that boring password markup to any text or string of your choice</b> </h5>
+            <input type='text' placeholder='type password' class='col s12 m12 white markup center' >
+            <button class='btn large red release'>see</button>
+
+
+        </div>
+        </div>
+      </div>
+      <script type='text/javascript' src='conceal.js'></script>
+
+      <script type="text/javascript">
+          var fancyInput = new concealer();
+          fancyInput.conceal('.markup','IamSOSneeky!!!LOL:)');
+          var i=0;
+          $('.release').click(function(){
+            i+=1;
+            if(i==1){
+              $(this).html('unsee')
+              fancyInput.reveal();
+            }
+            else{
+              $(this).html('see')
+              fancyInput.reconceal();
+              i=0;
+            }
+
+          })
+
+      </script>
+
+    </body>
+
+</html>
