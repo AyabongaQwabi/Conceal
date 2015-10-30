@@ -1,4 +1,4 @@
-# Conceal.js
+# Conceal.js-Beta
 
 ## Demo 
 https://htmlpreview.github.io/?https://github.com/AyabongaQwabi/Conceal/blob/master/pass.htm
